@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Route, RouterModule } from '@angular/router';
@@ -11,7 +12,7 @@ const routes: Route[] = [
 
 @NgModule({
   imports: [BrowserModule, RouterModule.forRoot(routes)],
-  declarations: [AppComponent],
+  declarations: [AppComponent, MessagePageComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
